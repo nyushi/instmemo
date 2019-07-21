@@ -11,7 +11,6 @@ export const EditorComponent: React.SFC<EditorProps> = (props: EditorProps) => {
     <div>
       <div className="field" >
         <textarea
-          placeholder="text"
           value={props.text}
           onChange={(e) => props.updateText(e.target.value)}>
         </textarea>

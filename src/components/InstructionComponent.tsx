@@ -9,7 +9,9 @@ export const InstructionComponent: React.SFC<EditorProps> = (props: EditorProps)
     return (
         <div>
             <div className="field" >
-                {props.text}
+                {
+                    props.text.split("\n").map((x, idx) => <div key={idx}>{x}</div>)
+                }
             </div>
         </div>
     );
